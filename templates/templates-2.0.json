@@ -366,22 +366,45 @@
 			}]
 		},
 		{
-			"title": "Datadog agent",
-			"type": 2,
 			"categories": [
-				"Monitoring"
+				"Other"
 			],
-			"description": "Collect events and metrics",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
+			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
+			"env": [
+				{
+					"label": "INTERFACE",
+					"name": "INTERFACE",
+					"set": "eth0"
+				},
+				{
+					"default": "998",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/openvpn-as:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/openvpn-as-icon.png",
+			"name": "openvpn-as",
 			"platform": "linux",
-			"repository": {
-				"url": "https://github.com/portainer/templates",
-				"stackfile": "stacks/datadog-agent/docker-stack.yml"
-			},
-			"env": [{
-				"name": "API_KEY",
-				"label": "Datadog API key"
-			}]
+			"ports": [
+				"943:943/tcp",
+				"9443:9443/tcp",
+				"1194:1194/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "OpenVPN Access Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/srv/dev-disk-by-label-Files/Config/OpenVPN-AS",
+					"container": "/config"
+				}
+			]
 		}
 	]
 }
