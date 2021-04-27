@@ -102,8 +102,8 @@
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
 			"image": "nginx:latest",
 			"ports": [
-				"80/tcp",
-				"443/tcp"
+				"8887/tcp",
+				"4442:443/tcp"
 			],
 			"volumes": [{
 					"container": "/etc/nginx"
@@ -124,7 +124,8 @@
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/httpd.png",
 			"image": "httpd:latest",
 			"ports": [
-				"80/tcp"
+				"8888:80/tcp",
+				"4443:443/tcp"
 			],
 			"volumes": [{
 				"container": "/usr/local/apache2/htdocs/"
