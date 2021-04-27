@@ -389,7 +389,7 @@
 				"9000:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "TheLoungeChat",
+			"title": "The Lounge Chat",
 			"type": 1,
 			"volumes": [
 				{
