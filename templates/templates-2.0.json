@@ -90,7 +90,7 @@
 		},
 		{
 			"type": 1,
-			"title": "Caddy",
+			"title": "Caddy 2",
 			"description": "HTTP/2 web server with automatic HTTPS",
 			"categories": [
 				"webserver"
