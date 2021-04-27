@@ -402,7 +402,7 @@
 			"categories": [
 				"Other"
 			],
-			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities",
+			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution",
 			"env": [
 				{
 					"label": "INTERFACE",
