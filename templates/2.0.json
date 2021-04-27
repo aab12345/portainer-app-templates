@@ -102,7 +102,7 @@
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
 			"image": "nginx:latest",
 			"ports": [
-				"8887/tcp",
+				"8887:80/tcp",
 				"4442:443/tcp"
 			],
 			"volumes": [{
