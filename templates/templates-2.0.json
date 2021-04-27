@@ -19,14 +19,13 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/dev-disk-by-label-Files/Config/Bitwarden-rs",
+					"bind": "/srv/portainer/config/bitwarden-rs",
 					"container": "/config"
 				}
 			]
 		},
 		{
 			"categories": [
-				"Proxy",
 				"Tools"
 			],
 			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
@@ -44,7 +43,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/dev-disk-by-label-Files/Config/Nginx-Proxy",
+					"bind": "/srv/portainer/config/nginx-proxy",
 					"container": "/config"
 				}
 			]
@@ -365,11 +364,45 @@
 				"description": "Password used by the MySQL root user."
 			}]
 		},
+{
+			"categories": [
+				"Messenger"
+			],
+			"description": "A self-hosted web IRC client",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/thelounge:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
+			"name": "thelounge",
+			"platform": "linux",
+			"ports": [
+				"9000:9000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "TheLounge",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/srv/portainer/config/thelounge",
+					"container": "/config"
+				}
+			]
+		},
 		{
 			"categories": [
 				"Other"
 			],
-			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
+			"description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities",
 			"env": [
 				{
 					"label": "INTERFACE",
@@ -401,7 +434,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/dev-disk-by-label-Files/Config/OpenVPN-AS",
+					"bind": "/srv/portainer/config/OpenVPN-AS",
 					"container": "/config"
 				}
 			]
