@@ -1,21 +1,29 @@
 {
 	"version": "2",
-	"templates": [{
-			"type": 1,
-			"title": "Registry",
-			"description": "Docker image registry",
+	"templates": [
+		{
 			"categories": [
-				"docker"
+				"Other",
+				"Tools"
 			],
+			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+			"image": "bitwardenrs/server:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+			"name": "bitwardenrs",
+			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
 			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-			"image": "registry:latest",
 			"ports": [
-				"5000/tcp"
+				"80/tcp"
 			],
-			"volumes": [{
-				"container": "/var/lib/registry"
-			}]
+			"restart_policy": "unless-stopped",
+			"title": "Bitwarden RS",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/srv/dev-disk-by-label-Files/Config/Bitwarden-rs",
+					"container": "/config"
+				}
+			]
 		},
 		{
 			"type": 1,
