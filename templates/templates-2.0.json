@@ -105,24 +105,6 @@
 		},
 		{
 			"type": 1,
-			"title": "CrateDB",
-			"description": "An open-source distributed SQL database",
-			"categories": [
-				"database"
-			],
-			"platform": "linux",
-			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cratedb.png",
-			"image": "crate:latest",
-			"ports": [
-				"4200/tcp",
-				"4300/tcp"
-			],
-			"volumes": [{
-				"container": "/data"
-			}]
-		},
-		{
-			"type": 1,
 			"title": "Magento 2",
 			"description": "Open-source e-commerce platform",
 			"categories": [
