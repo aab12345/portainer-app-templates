@@ -9,7 +9,7 @@
 			"image": "bitwardenrs/server:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
 			"name": "bitwardenrs",
-			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
+			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC, the container runs over port 8010 by default.",
 			"platform": "linux",
 			"ports": [
 				"8010:80/tcp"
@@ -74,6 +74,7 @@
 			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
 			"image": "jlesage/nginx-proxy-manager",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
+			"note": "The container runs over ports 80, 81 and 443 by default.",
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
 			"ports": [
@@ -100,6 +101,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/nginx.png",
+			"note": "The container runs over ports 8887 and 4442 by default.",
 			"image": "nginx:latest",
 			"ports": [
 				"8887:80/tcp",
@@ -122,6 +124,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/httpd.png",
+			"note": "The container runs over ports 8888, 4443 by default.",
 			"image": "httpd:latest",
 			"ports": [
 				"8888:80/tcp",
@@ -140,11 +143,12 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/caddy.png",
+			"note": "The container runs over ports 82, 4441 and 2016 by default.",
 			"image": "abiosoft/caddy:latest",
 			"ports": [
-				"80/tcp",
-				"443/tcp",
-				"2015/tcp"
+				"82/tcp",
+				"4441/tcp",
+				"2016/tcp"
 			],
 			"volumes": [{
 				"container": "/root/.caddy"
@@ -159,6 +163,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
+			"note": "The container runs over ports 3306 by default.",
 			"image": "mysql:latest",
 			"env": [{
 				"name": "MYSQL_ROOT_PASSWORD",
@@ -180,11 +185,12 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/magento.png",
+			"note": "The container runs over ports 83, 3001 and 3002 by default.",
 			"image": "alankent/gsd:latest",
 			"ports": [
-				"80/tcp",
-				"3000/tcp",
-				"3001/tcp"
+				"83/tcp",
+				"3001/tcp",
+				"3002/tcp"
 			],
 			"volumes": [{
 				"container": "/var/www/html/"
@@ -199,6 +205,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/elasticsearch.png",
+			"note": "The container runs over ports 9200 and 9300 by default.",
 			"image": "elasticsearch:latest",
 			"ports": [
 				"9200/tcp",
@@ -216,7 +223,7 @@
 				"database"
 			],
 			"platform": "linux",
-			"note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
+			"note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols and runs over port 1433 by default.",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
 			"image": "microsoft/mssql-server-linux:2017-GA",
 			"ports": [
@@ -427,6 +434,7 @@
 			],
 			"image": "linuxserver/thelounge:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
+			"note": "The container runs over ports 9010 by default.",
 			"name": "thelounge",
 			"platform": "linux",
 			"ports": [
@@ -444,7 +452,6 @@
 		},
 		{
 			"categories": [
-				"Other",
 				"Tools"
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
