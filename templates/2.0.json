@@ -19,7 +19,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/portainer/config/bitwarden-rs",
+					"bind": "/srv/portainer/config/vaultwarden",
 					"container": "/config"
 				}
 			]
