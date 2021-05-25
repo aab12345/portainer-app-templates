@@ -12,7 +12,7 @@
 			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC, the container runs over port 8010 by default.",
 			"platform": "linux",
 			"ports": [
-				"8010:80/tcp"
+				"8011:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "VaultWarden",
