@@ -415,7 +415,7 @@
 				"description": "Password used by the MySQL root user."
 			}]
 		},
-{
+		{
 			"categories": [
 				"Messenger"
 			],
@@ -447,6 +447,41 @@
 				{
 					"bind": "/srv/portainer/config/thelounge",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Messenger"
+			],
+			"description": "A self-hosted web IRC client master build.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "registry.gitlab.com/gewoonyorick/thelounge-docker-master:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
+			"note": "The container runs over ports 9012 by default.  This is a master build v4.3.0.",
+			"name": "thelounge",
+			"platform": "linux",
+			"ports": [
+				"9012:9000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "The Lounge Chat (Master.Source)",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/srv/portainer/config/thelounge.source",
+					"container": "/config.source"
 				}
 			]
 		},
