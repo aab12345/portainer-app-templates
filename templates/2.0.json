@@ -467,7 +467,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "registry.gitlab.com/gewoonyorick/thelounge-docker-master:latest",
+			"image": "zen262176/thelounge-docker:master",
 			"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
 			"note": "The container runs over ports 9012 by default.  This is a master build v4.3.0.",
 			"name": "thelounge-master",
