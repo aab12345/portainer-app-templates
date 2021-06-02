@@ -8,4 +8,4 @@ For more information about the template definition format and how to deploy your
 ## How to install;
 - Copy the below link to settings > App Templates > URL > Save
 - Then go to App Templates and it will load the app list to deploy.
-> https://raw.githubusercontent.com/el-profesor926/portainer/main/templates/2.0.json
+> https://raw.githubusercontent.com/el-profesor926/portainer-app-templates/main/templates/2.0.json
