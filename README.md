@@ -6,6 +6,6 @@ This repository hosts some templates ('Apps Templates') definitions for Portaine
 For more information about the template definition format and how to deploy your own templates, see the relevant documentation section.
 
 ## How to install;
-- Copy the below link to settings > App Templates > URL > Save
-- Then go to App Templates and it will load the app list to deploy.
+- Copy the below link to settings > App Templates > URL > Save (Screenshot1)
+- Then go to App Templates and it will load the app list to deploy. (Screenshot2)
 > https://raw.githubusercontent.com/el-profesor926/portainer-app-templates/main/templates/2.0.json
