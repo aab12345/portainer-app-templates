@@ -441,7 +441,7 @@
 				"9010:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "The Lounge Chat",
+			"title": "The Lounge Chat (v4.2.0)",
 			"type": 1,
 			"volumes": [
 				{
