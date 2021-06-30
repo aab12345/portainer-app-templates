@@ -1,0 +1,35 @@
+version: "2"
+
+services:
+  db:
+    image: ghcr.io/linuxserver/mariadb:version-110.4.17mariabionic
+    container_name: matomo_db
+    environment:
+      - PUID=1000
+      - PGID=100
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - TZ=Europe/London
+      - MYSQL_DATABASE=matomo
+      - MYSQL_USER=matomo
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ${DB_VOLUME}:/config
+    restart: unless-stopped
+
+  app:
+    image: matomo:latest
+    restart: unless-stopped
+    container_name: matomo_app
+    volumes:
+      - ${MATOMO_VOLUME}:/var/www/html
+    environment:
+      - MATOMO_DATABASE_HOST=db
+      - MATOMO_DATABASE_ADAPTER=mysql
+      - MATOMO_DATABASE_TABLES_PREFIX=matomo_
+      - MATOMO_DATABASE_USERNAME=matomo
+      - MATOMO_DATABASE_PASSWORD=${MYSQL_PASSWORD}
+      - MATOMO_DATABASE_DBNAME=matomo
+    ports:
+      - ${PORT}:80
+    depends_on:
+      - db
