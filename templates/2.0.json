@@ -400,7 +400,7 @@
         {
           "name": "MATOMO_VOLUME",
           "label": "Matomo Volume",
-          "default": "/srv/portainer/config/App"
+          "default": "/srv/portainer/config/Matomo/Data_Volume"
         },
         {
           "name": "PORT",
