@@ -388,7 +388,7 @@
       ],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/andyyanguk/portainer_templates",
+        "url": "https://github.com/el-profesor926/portainer-app-templates",
         "stackfile": "stacks/matomo.yml"
       },
       "env": [
