@@ -375,6 +375,48 @@
 				"container": "/var/www/html"
 			}]
 		},
+    {
+      "type": 3,
+      "title": "Matomo",
+      "name": "matomo",
+      "description": "Analytics tool",
+      "categories": [
+        "Cloud",
+        "Productivity",
+        "Tools",
+        "Other"
+      ],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/andyyanguk/portainer_templates",
+        "stackfile": "stacks/matomo.yml"
+      },
+      "env": [
+        {
+          "name": "DB_VOLUME",
+          "label": "DB Volume",
+          "default": "/srv/portainer/config/Matomo/DB"
+        },
+        {
+          "name": "MATOMO_VOLUME",
+          "label": "Matomo Volume",
+          "default": "/srv/portainer/config/App"
+        },
+        {
+          "name": "PORT",
+          "label": "Port",
+          "default": "8384"
+        },
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "MySQL Root Pass"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "label": "MySQL Pass"
+        }
+      ]
+    },
 		{
 			"type": 2,
 			"title": "Wordpress",
