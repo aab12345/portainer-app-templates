@@ -15,6 +15,7 @@
 				"8011:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
+			"ADMIN_TOKEN": "$ADMIN_TOKEN",
 			"title": "VaultWarden",
 			"type": 1,
 			"volumes": [
