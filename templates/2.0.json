@@ -20,7 +20,7 @@
         		{
           			"name": "ADMIN_TOKEN",
          			 "label": "$ADMIN_TOKEN",
-       			 },
+       			 }
 			"type": 1,
 			"volumes": [
 				{
