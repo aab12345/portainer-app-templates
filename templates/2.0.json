@@ -15,12 +15,7 @@
 				"8011:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "VaultWarden",
-			"env": [{
-				"name": "ADMIN_TOKEN",
-				"label": "Admin Token"
-				"description": "Password used by the /ADMIN user in base64 encryption."
-			}],	
+			"title": "VaultWarden",	
 			"type": 1,
 			"volumes": [
 				{
