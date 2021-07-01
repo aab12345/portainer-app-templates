@@ -18,9 +18,10 @@
 			"title": "VaultWarden",
 			"type": 1,
 			"env": [
-				{
-					"ADMIN_TOKEN": "$ADMIN_TOKEN",
-				},
+        			{
+         			 "name": "$ADMIN_TOKEN",
+         			 "label": "ADMIN_TOKEN",
+		        },
 			"volumes": [
 				{
 					"bind": "/srv/portainer/config/vaultwarden",
