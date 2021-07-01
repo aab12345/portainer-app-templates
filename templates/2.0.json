@@ -17,14 +17,14 @@
 			"restart_policy": "unless-stopped",
 			"title": "VaultWarden",
 			"type": 1,
+			"env": [
+				{
+					"ADMIN_TOKEN": "$ADMIN_TOKEN",
+				},
 			"volumes": [
 				{
 					"bind": "/srv/portainer/config/vaultwarden",
 					"container": "/config"
-				},
-				"env": [
-				{
-					"ADMIN_TOKEN": "$ADMIN_TOKEN",
 				}
 			]
 		},
