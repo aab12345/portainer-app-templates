@@ -17,11 +17,6 @@
 			"restart_policy": "unless-stopped",
 			"title": "VaultWarden",
 			"type": 1,
-			"env": [
-        			{
-         			 "name": "$ADMIN_TOKEN",
-         			 "label": "ADMIN_TOKEN",
-		        }
 			"volumes": [
 				{
 					"bind": "/srv/portainer/config/vaultwarden",
