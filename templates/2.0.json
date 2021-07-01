@@ -518,7 +518,7 @@
 				"9012:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "The Lounge Chat (ProdMaster v4.3.0-pre.2)",
+			"title": "The Lounge Chat (ProdMaster v4.3.0-pre.4)",
 			"type": 1,
 			"volumes": [
 				{
