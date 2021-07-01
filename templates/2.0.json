@@ -19,6 +19,7 @@
 			"env": [{
 				"name": "ADMIN_TOKEN",
 				"label": "Admin Token"
+				"description": "Password used by the /ADMIN user in base64 encryption."
 			}],	
 			"type": 1,
 			"volumes": [
