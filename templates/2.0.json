@@ -16,6 +16,11 @@
 			],
 			"restart_policy": "unless-stopped",
 			"title": "VaultWarden",
+			"env": [
+        		{
+          			"name": "ADMIN_TOKEN",
+         			 "label": "$ADMIN_TOKEN",
+       			 },
 			"type": 1,
 			"volumes": [
 				{
