@@ -6,10 +6,10 @@
 				"Tools"
 			],
 			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-			"image": "vaultwarden/server:latest",
+			"image": "vaultwarden/server:1.22.1-alpine",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
 			"name": "vaultwarden",
-			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC, the container runs over port 8010 by default.",
+			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC, the container runs over port 8010 by default. Version 1.22.1 Alpine Image.",
 			"platform": "linux",
 			"ports": [
 				"8011:80/tcp"
