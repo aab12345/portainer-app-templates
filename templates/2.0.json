@@ -5,7 +5,7 @@
 			"categories": [
 				"Tools"
 			],
-			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients.",
 			"image": "vaultwarden/server:1.22.1-alpine",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
 			"name": "vaultwarden",
