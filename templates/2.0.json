@@ -9,7 +9,7 @@
 			"image": "vaultwarden/server:1.22.2-alpine",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
 			"name": "vaultwarden",
-			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC, the container runs over port 8010 by default. Version 1.22.1 Alpine Image.",
+			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC, the container runs over port 8010 by default. Version 1.22.2 Alpine Image.",
 			"platform": "linux",
 			"ports": [
 				"8011:80/tcp"
