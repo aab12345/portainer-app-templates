@@ -494,41 +494,6 @@
 		},
 		{
 			"categories": [
-				"Messenger"
-			],
-			"description": "A self-hosted web IRC client master build.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "aab12345/thelounge-docker:production",
-			"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
-			"note": "The container runs over ports 9012 by default.  This is a master build v4.3.0.",
-			"name": "thelounge-prodmaster",
-			"platform": "linux",
-			"ports": [
-				"9012:9000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "The Lounge Chat (ProdMaster v4.3.0-pre.4)",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/srv/portainer/config/thelounge.source",
-					"container": "/config.source"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Tools"
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
